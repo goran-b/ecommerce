@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Category</h1>
+<form [formGroup]="form">
+  <div mat-dialog-content class="create-form">
+    <mat-form-field>
+      <input matInput placeholder="Name" required formControlName="name" autocomplete="off" />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button  (click)="close()">Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="form.invalid" type="submit" (click)="save(form)">Save</button>
+  </div>
+</form>
