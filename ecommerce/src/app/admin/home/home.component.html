@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Admin page</span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+
+<mat-button-toggle-group name="nav " aria-label="nav">
+    <mat-button-toggle  routerLink="products">Products</mat-button-toggle>
+    <mat-button-toggle routerLink="orders">Orders</mat-button-toggle>
+  </mat-button-toggle-group>
+<router-outlet></router-outlet>

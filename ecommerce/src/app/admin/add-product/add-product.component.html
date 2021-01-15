@@ -1,0 +1,33 @@
+<form [formGroup]="form" class="content">
+  <h3>Product</h3>
+
+  <mat-form-field>
+    <input matInput placeholder="Name" required formControlName="name" autocomplete="off">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="5"
+      placeholder="Description" required formControlName="description" autocomplete="off"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Category</mat-label>
+    <mat-select formControlName="category" required>
+      <mat-option *ngFor="let category of categories" [value]="category.name">
+        {{category.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Image" required formControlName="imgUrl" autocomplete="off" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Price" required formControlName="price" autocomplete="off" />
+  </mat-form-field>
+
+  <span> <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid" (click)="save(form)">
+      Save
+    </button></span>
+</form>

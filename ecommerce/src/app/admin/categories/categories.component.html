@@ -1,0 +1,30 @@
+<mat-list>
+    <div class="subheader" mat-subheader>
+        <h3>
+            Categories
+        </h3>
+        <button mat-raised-button color="primary" (click)="addCategory()">Add category</button>
+    </div>
+    <form [formGroup]="form">
+        <div class="select">
+            <mat-form-field>
+                <mat-label>Filter by category</mat-label>
+                <mat-select formControlName="category" required #cat [(ngModel)]="childData" (ngModelChange)="onModelChange($event)">
+                    <mat-option (click)="onModelChange({ id: '', name: '' })" value="{id:'',name:''}">All products</mat-option>
+                    <mat-option *ngFor="let category of categories" [value]="category">
+                        {{category.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <mat-chip-list aria-label="Options" *ngIf="cat.value.name !== ''">
+            <mat-chip color="primary" (click)="editCategory(form.value)">Edit category</mat-chip>
+            <mat-chip color="warn" selected (click)="deleteCategory(cat.value)">Delete category</mat-chip>
+
+        </mat-chip-list>
+    </form>
+
+
+
+
+</mat-list>

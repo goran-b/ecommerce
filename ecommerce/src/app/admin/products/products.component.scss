@@ -1,0 +1,19 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.categories{
+    flex:1;
+}
+.table-header{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    box-sizing: border-box;
+}
+.table{
+    flex:3;
+}
+table {
+    width: 100%;
+  }
