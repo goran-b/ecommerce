@@ -2,10 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Product } from '../model/product.model';
-import {
-  catchError, filter, map, mergeMap, scan, shareReplay, tap, toArray, switchMap,
-  mergeAll, max, reduce, concatMap, delay
-} from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +10,7 @@ import {
 export class ProductsService {
 
   $products!: Observable<any[]>;
-  
+
   constructor(private firestore: AngularFirestore) {
     this.$products = this.getProducts()
   }
