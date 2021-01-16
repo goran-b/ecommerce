@@ -14,16 +14,16 @@ If you're using any code style like xo, standard etc. That will help others whil
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
-![Alt text](screenshot-user-page.png "Optional Title")
-![Alt text](screenshot-admin-page.png "Optional Title")
-![User page](https://github.com/goran-b/ecommerce/blob/main/screenshot-admin-page.PNG)
+
+![User page](https://github.com/goran-b/ecommerce/blob/main/screenshot-user-page.PNG)
+![Admin page](https://github.com/goran-b/ecommerce/blob/main/screenshot-admin-page.PNG)
 
 
 ## Tech/framework used
 Ex. -
 
 <b>Built with</b>
-- [Angularn](https://angular.io)
+- [Angular](https://angular.io)
 - [Material Design](https://material.angular.io)
 - [Firebase](https://http://firebase.google.com/)
 
