@@ -1,0 +1,6 @@
+<mat-list>
+    <div mat-subheader>Filter by category</div>
+    <mat-list-item (click)="filterByCategory({id:'', name:''})">All</mat-list-item>
+    <mat-list-item *ngFor="let category of categories" (click)="filterByCategory(category)"> {{ category.name}}
+    </mat-list-item>
+</mat-list>

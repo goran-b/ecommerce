@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8EAF6;
+}
+
+.products {
+    flex: 4;
+}
+.example-card {
+    max-width: 400px;
+  }
+.products-list {
+    --auto-grid-min-size: 16rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1.2fr));
+    grid-template-rows: fit-content(60%);
+    grid-gap: 1rem;
+  
+}
+.product{
+    cursor: pointer;
+    img {
+        width: 100%;
+        height: auto;
+      }
+      .mat-card-image{
+          margin:auto;
+      }
+}
+category-list {
+    flex: 1;
+}
+mat-card-actions{
+    display: flex;
+    justify-content: space-between;
+}
+.snack{
+    color: rgb(170, 56, 155);
+}

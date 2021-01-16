@@ -1,1 +1,26 @@
-<p>products works!</p>
+<div class="container">
+    <category-list (filter)='filterProducts($event)'></category-list>
+    <div class="products">
+        <div mat-subheader>All products</div>
+        <div class="products-list">
+            <div class="product" *ngFor="let product of productsList">
+                <mat-card class="example-card" (click)='openProduct()'>
+                    <mat-card-header>
+                        <mat-card-title>{{ product.name }}</mat-card-title>
+                        <mat-card-subtitle>{{ product.category}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="{{ product.imgUrl }}" alt="{{ product.name }}">
+                    <mat-card-content>
+                        <p>
+                            {{ product.description}}
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <h3>{{ product.price | number}} $</h3>
+                        <button mat-button color='warn' disabled>ADD TO CART</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
