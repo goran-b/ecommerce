@@ -16,6 +16,7 @@ If you're using any code style like xo, standard etc. That will help others whil
 ## Screenshots
 ![Alt text](screenshot-user-page.png "Optional Title")
 ![Alt text](screenshot-admin-page.png "Optional Title")
+![User page](https://github.com/goran-b/ecommerce/blob/main/screenshot-admin-page.PNG)
 
 
 ## Tech/framework used
