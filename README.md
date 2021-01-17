@@ -9,7 +9,6 @@ This is intended to demonstrate the use of angular features and the handling of 
 
 
 ## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
