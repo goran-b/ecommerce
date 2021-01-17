@@ -20,7 +20,6 @@ If you're using any code style like xo, standard etc. That will help others whil
 
 
 ## Tech/framework used
-Ex. -
 
 <b>Built with</b>
 - [Angular](https://angular.io)
