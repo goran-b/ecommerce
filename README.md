@@ -27,7 +27,7 @@ This is intended to demonstrate the use of angular features and the handling of 
 
 
 ## Features
-This project uses Angular data binding, observability, communication between components, data retrieval from services, CRUD operations, and so on.
+This project uses Angular data binding, observables, communication between components, data retrieval from services, CRUD operations, and so on.
 In the next steps, upgrades will be made (authentication, guards, shopping cart, ordering, sales management, ...)
 
 
