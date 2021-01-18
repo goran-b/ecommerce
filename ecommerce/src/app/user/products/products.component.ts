@@ -35,7 +35,6 @@ export class ProductsComponent implements OnInit {
 
   private filter(category: Category) {
     if (category.name == "") {
-      console.log('sdsaddsa')
       this.productsList = this.products
     } else {
       this.productsList = this.products.filter(product => product.category == category.name)
