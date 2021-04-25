@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class ProductsService {
 
-  $products!: Observable<any[]>;
+  $products!: Observable<Product[]>;
 
   constructor(private firestore: AngularFirestore) {
     this.$products = this.getProducts()

@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "ecommerce"
+  "defaultProject": "ecommerce",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
